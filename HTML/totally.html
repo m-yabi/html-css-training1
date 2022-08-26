@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../scss/totally.css" />
     <title>Document</title>
   </head>
@@ -16,7 +19,6 @@
         <h1 class="header-logo">
           <img src="img/logo (2).svg" alt="" />
         </h1>
-        <div class="container">
         <div class="menu">
           <ul class="menu-list1">
             <li>ALL</li>
@@ -34,90 +36,92 @@
       </div>
     </header>
     <main>
-      <div class="product__page">
-        <img src="img/item (1).jpg" alt="" />
-        <h2 class="product__name">TOTALLY Short Sleeve Shirt</h2>
-        <p>
-          テキストテキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキストテキスト
-          テキストテキストテキスト
-        </p>
-        <h3 class="price">¥9,999 +tax</h3>
-        <table>
-          <tr>
-            <th>Color</th>
-            <th>Size</th>
-          </tr>
-          <tr>
-            <td>White</td>
-            <td>S</td>
-            <td>
-              <form>
-                <select name="size__select" size="1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td>White</td>
-            <td>M</td>
-            <td>
-              <select name="quantity">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td>White</td>
-            <td>L</td>
-            <td>
-              <form>
-                <select name="size__select" size="1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
-              </form>
-            </td>
-          </tr>
-        </table>
-        <a href="">ADD TO CART</a>
-        <table>
-          <tr>
-            <td>Size</td>
-            <td>Chest</td>
-            <td>Weist</td>
-            <td>Height</td>
-          </tr>
-          <tr>
-            <td>S</td>
-            <td>99~99</td>
-            <td>99~99</td>
-            <td>99~99</td>
-          </tr>
-          <tr>
-            <td>M</td>
-            <td>99~99</td>
-            <td>99~99</td>
-            <td>99~99</td>
-          </tr>
-          <tr>
-            <td>L</td>
-            <td>99~99</td>
-            <td>99~99</td>
-            <td>99~99</td>
-          </tr>
-        </table>
+      <div class="container">
+        <div class="product__page">
+          <div class="product__image">
+            <img src="img/item (1).jpg" alt="" />
+          </div>
+          <div class="product__detail">
+            <h2 class="product__name">TOTALLY Short Sleeve Shirt</h2>
+            <p class="product__text">
+              テキストテキストテキストテキストテキストテキストテキスト<br />
+              テキストテキストテキストテキストテキストテキストテキスト<br />
+              テキストテキストテキストテキストテキストテキストテキスト<br />
+              テキストテキストテキストテキストテキストテキストテキスト<br />
+              テキストテキストテキストテキストテキストテキストテキスト<br />
+              テキストテキストテキスト
+            </p>
+            <h3 class="price">¥9,999 +tax</h3>
+            <table>
+              <tr class="size-quantity">
+                <th class="color">Color</th>
+                <th class="border">Size</th>
+                <th></th>
+              </tr>
+              <tr class="size-quantity">
+                <td>White</td>
+                <td class="border">S</td>
+                <td>
+                  <select name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="size-quantity">
+                <td>White</td>
+                <td class="border">M</td>
+                <td>
+                  <select name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="size-quantity">
+                <td>White</td>
+                <td class="border">L</td>
+                <td>
+                  <select name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+            <a href="">ADD TO CART</a>
+            <table>
+              <tr>
+                <td>Size</td>
+                <td>Chest</td>
+                <td>Weist</td>
+                <td>Height</td>
+              </tr>
+              <tr>
+                <td>S</td>
+                <td>99~99</td>
+                <td>99~99</td>
+                <td>99~99</td>
+              </tr>
+              <tr>
+                <td>M</td>
+                <td>99~99</td>
+                <td>99~99</td>
+                <td>99~99</td>
+              </tr>
+              <tr>
+                <td>L</td>
+                <td>99~99</td>
+                <td>99~99</td>
+                <td>99~99</td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
-    </div>
     </main>
     <footer>
       <small>© TOTALLY</small>
