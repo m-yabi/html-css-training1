@@ -1,1 +1,43 @@
 @import "_settings.scss";
+body {
+  max-width: 1000px;
+  margin: auto;
+}
+* {
+  font-family: "Raleway", sans-serif;
+}
+.header-logo {
+  max-width: 109px;
+  margin: auto;
+  margin-top: 46px;
+  margin-bottom: 10px;
+
+  img {
+    width: 100%;
+  }
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+.menu {
+  @include pc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 0px;
+    border-bottom: 1px solid #c3c3c3;
+  }
+}
+.menu-list1 li {
+  font-size: 12px;
+  float: left;
+  margin-right: 14px;
+}
+.menu-list2 li {
+  font-size: 12px;
+  @include pc {
+    float: left;
+    margin-right: 14px;
+  }
+}
