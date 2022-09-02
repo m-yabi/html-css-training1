@@ -105,20 +105,23 @@ body {
   }
 }
 
+.menu {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
 @media (min-width: 751px) {
   .menu {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
     padding: 26px 100px;
     border-bottom: 1px solid #c3c3c3;
   }
 }
 @media (max-width: 750px) {
   .menu {
-    display: inline-block;
-    width: 100%;
+    margin: 0px 20px;
+    overflow-x: auto;
+    white-space: nowrap;
     margin-top: 26px;
     margin-bottom: 16px;
   }
@@ -127,11 +130,8 @@ body {
 @media (max-width: 750px) {
   .menu-list1,
 .menu-list2 {
-    margin: 0 auto;
-    padding: 0;
-    width: 90%;
-    overflow-x: auto;
-    white-space: nowrap;
+    display: flex;
+    margin-left: 10px;
   }
 }
 
@@ -145,6 +145,7 @@ body {
   .menu-list1 li,
 .menu-list2 li {
     display: inline-block;
+    display: flex;
   }
 }
 
@@ -241,7 +242,6 @@ select {
 .buttom {
   background-color: black;
   color: white;
-  max-width: 340px;
   height: 54px;
   display: flex;
   justify-content: center;
@@ -249,6 +249,11 @@ select {
   margin-top: 20px;
   margin-bottom: 30px;
   font-size: 12px;
+}
+@media (min-width: 751px) {
+  .buttom {
+    max-width: 340px;
+  }
 }
 
 .coloring,
@@ -262,8 +267,12 @@ select {
 }
 
 .size-chart {
-  max-width: 340px;
   height: 152px;
+}
+@media (min-width: 751px) {
+  .size-chart {
+    max-width: 340px;
+  }
 }
 
 footer {

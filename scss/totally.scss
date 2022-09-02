@@ -28,17 +28,18 @@ body {
   }
 }
 .menu {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
   @include pc {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
     padding: 26px 100px;
     border-bottom: 1px solid #c3c3c3;
   }
   @include sp {
-    display: inline-block;
-    width: 100%;
+    margin: 0px 20px;
+    overflow-x: auto;
+    white-space: nowrap;
     margin-top: 26px;
     margin-bottom: 16px;
   }
@@ -46,11 +47,8 @@ body {
 .menu-list1,
 .menu-list2 {
   @include sp {
-    margin: 0 auto;
-    padding: 0;
-    width: 90%;
-    overflow-x: auto;
-    white-space: nowrap;
+    display: flex;
+    margin-left: 10px;
   }
 }
 .menu-list1 li,
@@ -60,6 +58,7 @@ body {
   margin-right: 14px;
   @include sp {
     display: inline-block;
+    display: flex;
   }
 }
 .product__page {
@@ -141,7 +140,6 @@ select {
 .buttom {
   background-color: black;
   color: white;
-  max-width: 340px;
   height: 54px;
   display: flex;
   justify-content: center;
@@ -149,6 +147,9 @@ select {
   margin-top: 20px;
   margin-bottom: 30px;
   font-size: 12px;
+  @include pc {
+    max-width: 340px;
+  }
 }
 .coloring,
 .size {
@@ -160,7 +161,9 @@ select {
 }
 
 .size-chart {
-  max-width: 340px;
+  @include pc {
+    max-width: 340px;
+  }
   height: 152px;
 }
 footer {
