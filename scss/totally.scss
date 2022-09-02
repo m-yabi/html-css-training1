@@ -109,7 +109,7 @@ select {
 .border {
   width: 15%;
 }
-.bottum {
+.buttom {
   background-color: black;
   color: white;
   max-width: 340px;
@@ -120,4 +120,17 @@ select {
   margin-top: 20px;
   margin-bottom: 30px;
   font-size: 12px;
+}
+.coloring,
+.size {
+  border: 1px solid #c3c3c3;
+  vertical-align: middle;
+}
+.coloring {
+  background-color: rgb(222, 219, 219);
+}
+
+.size-chart {
+  max-width: 340px;
+  height: 152px;
 }
