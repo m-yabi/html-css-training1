@@ -189,9 +189,23 @@ select {
   -webkit-appearance: menulist;
   width: 80%;
   text-align: left;
+  padding-left: 10px;
 }
 
 .color,
 .border {
   width: 15%;
+}
+
+.bottum {
+  background-color: black;
+  color: white;
+  max-width: 340px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 12px;
 }/*# sourceMappingURL=totally.css.map */
