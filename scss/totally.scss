@@ -9,36 +9,57 @@ body {
 .header-logo {
   max-width: 109px;
   margin: auto;
-  margin-top: 46px;
-  margin-bottom: 10px;
-
-  img {
-    width: 100%;
+  @include pc {
+    margin-top: 46px;
+    margin-bottom: 10px;
+    img {
+      width: 100%;
+    }
+  }
+  @include sp {
+    margin-top: 36px;
   }
 }
 .container {
   max-width: 800px;
   margin: auto;
+  @include sp {
+    padding: 0px 20px;
+  }
 }
 .menu {
   @include pc {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 26px 100px;
     border-bottom: 1px solid #c3c3c3;
   }
+  @include sp {
+    display: inline-block;
+    width: 100%;
+    margin-top: 26px;
+    margin-bottom: 16px;
+  }
 }
-.menu-list1 li {
+.menu-list1,
+.menu-list2 {
+  @include sp {
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+.menu-list1 li,
+.menu-list2 li {
   font-size: 12px;
   float: left;
   margin-right: 14px;
-}
-.menu-list2 li {
-  font-size: 12px;
-  @include pc {
-    float: left;
-    margin-right: 14px;
+  @include sp {
+    display: inline-block;
   }
 }
 .product__page {
@@ -52,6 +73,11 @@ body {
     max-width: 400px;
     max-height: 500px;
     margin-right: 60px;
+  }
+  @include sp {
+    margin: calc(-50vw + 50%);
+    margin-top: 16px;
+    margin-bottom: 10px;
   }
   img {
     height: 100%;
