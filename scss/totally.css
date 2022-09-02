@@ -126,11 +126,13 @@ body {
 
 @media (min-width: 751px) {
   .product__image {
-    width: 50%;
     max-width: 400px;
     max-height: 500px;
     margin-right: 60px;
   }
+}
+.product__image img {
+  height: 100%;
 }
 
 @media (min-width: 751px) {
@@ -161,6 +163,7 @@ body {
 
 table {
   width: 100%;
+  height: 150px;
 }
 
 .size-quantity {
@@ -187,14 +190,14 @@ select {
   border: 1px solid #c3c3c3;
   -moz-appearance: menulist;
   -webkit-appearance: menulist;
-  width: 80%;
+  width: 90%;
   text-align: left;
   padding-left: 10px;
 }
 
 .color,
 .border {
-  width: 15%;
+  width: 20%;
 }
 
 .buttom {
@@ -223,4 +226,11 @@ select {
 .size-chart {
   max-width: 340px;
   height: 152px;
+}
+
+footer {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  font-size: 10px;
+  text-align: center;
 }/*# sourceMappingURL=totally.css.map */
